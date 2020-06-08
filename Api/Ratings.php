@@ -7,9 +7,9 @@ if (!$con) {
 }
 
 mysqli_select_db($con,"ajax_demo");
-$sql="SELECT vote FROM charecter WHERE ID = 101";
+$sql="SELECT vote FROM charecter WHERE id = 101";
 $yes = mysqli_query($con,$sql);
-$sql2="SELECT vote FROM charecter WHERE ID = 102";
+$sql2="SELECT vote FROM charecter WHERE id = 102";
 $no = mysqli_query($con,$sql2);
 
 echo($yes);
@@ -20,13 +20,13 @@ echo(" ");
 if($vote = "101")
 {
 	$yes = $yes +1;
-	$sql3="UPDATE charecter SET vote = $yes WHERE ID = 101";
+	$sql3="UPDATE charecter SET vote = $yes WHERE id = 101";
 	mysqli_query($con,$sql3);
 }
 else
 {
 	$no =$no+1;
-	$sql3="UPDATE charecter SET vote = $no WHERE ID = 102";
+	$sql3="UPDATE charecter SET vote = $no WHERE id = 102";
 	mysqli_query($con,$sql3);
 }
 
