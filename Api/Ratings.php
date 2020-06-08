@@ -34,6 +34,10 @@ else
 mysqli_close($con);
 
 echo(100*round($yes/($no+$yes),2));
+echo(",");
+echo($yes);
 echo(" ");
 echo(100*round($no/($no+$yes),2));
+echo(",");
+echo($no);
 ?>
