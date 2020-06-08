@@ -13,7 +13,9 @@ $sql2="SELECT vote FROM charecter WHERE ID = 102";
 $no = mysqli_query($con,$sql2);
 
 echo($yes);
-echo(" "+$no);
+echo(" ");
+echo($no);
+echo(" ");
 
 if($vote = "101")
 {
