@@ -18,7 +18,7 @@ $dataAjith = mysqli_fetch_array($ajith);
 $yes = $dataVijay['vote'];
 $no = $dataAjith['vote'];
 
-if($vote = "101")
+if($vote === "101")
 {
 	$yes = $yes +1;
 	$sql3="UPDATE charecter SET vote = $yes WHERE id = 101";
