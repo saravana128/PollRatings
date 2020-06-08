@@ -1,7 +1,7 @@
 <?php
 $vote = $_REQUEST['vote'];
 
-$con = mysqli_connect('localhost','root','Sai@159$D19','ratings');
+$con = mysqli_connect('134.209.153.149','root','Sai@159$D19','ratings');
 if (!$con) {
   die('Could not connect: ' . mysqli_error($con));
 }
