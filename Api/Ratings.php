@@ -6,7 +6,7 @@ if (!$con) {
   die('Could not connect: ' . mysqli_error($con));
 }
 
-mysqli_select_db($con,"ajax_demo");
+mysqli_select_db($con,"ratings");
 $sql="SELECT vote FROM charecter WHERE id = 101";
 $yes = mysqli_query($con,$sql);
 $sql2="SELECT vote FROM charecter WHERE id = 102";
