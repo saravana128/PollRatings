@@ -7,15 +7,16 @@ if (!$con) {
 }
 
 mysqli_select_db($con,"ratings");
-$sql="SELECT vote FROM charecter WHERE id = 101";
-$yes = mysqli_query($con,$sql);
-$sql2="SELECT vote FROM charecter WHERE id = 102";
-$no = mysqli_query($con,$sql2);
+$sql="SELECT * FROM charecter WHERE id = 101";
+$vijay = mysqli_query($con,$sql);
+$sql2="SELECT * FROM charecter WHERE id = 102";
+$ajith = mysqli_query($con,$sql2);
 
-echo($yes);
-echo(" ");
-echo($no);
-echo(" ");
+$dataVijay = mysqli_fetch_array($vijay);
+$dataAjith = mysqli_fetch_array($ajith);
+
+$yes = $dataVijay['vote'];
+$no = $dataAjith['vote'];
 
 if($vote = "101")
 {
