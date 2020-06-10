@@ -60,14 +60,17 @@ echo(100*round($yes/($no+$yes+$raj+$sur),2));
 echo(",");
 echo($yes);
 echo(" ");
+
 echo(100*round($no/($no+$yes+$raj+$sur),2));
 echo(",");
 echo($no);
+echo(" ");
 
 //rajini
 echo(100*round($raj/($no+$yes+$raj+$sur),2));
 echo(",");
 echo($raj);
+echo(" ");
 
 //surya
 echo(100*round($sur/($no+$yes+$raj+$sur),2));
