@@ -104,9 +104,11 @@
         </footer>
 <script type="text/javascript">
     window.onload = function () {
+        document.getElementById("vijay").innerHTML ="width:"
         var url = document.location.href,
         var par = url.split('?')[1];
         var xmlhttp=new XMLHttpRequest();
+        document.getElementById("vijay").style="width: 55%"
   xmlhttp.onreadystatechange=function() {
     if (this.status==200) {
         var params = this.responseText.split(' ');

@@ -43,13 +43,13 @@ else
 	}
 	elseif ($vote === "103") {
 		$raj =$raj+1;
-		$sql3="UPDATE charecter SET vote = $no WHERE id = 103";
+		$sql3="UPDATE charecter SET vote = $raj WHERE id = 103";
 		mysqli_query($con,$sql3);
 	}
 	else
 	{
 		$sur =$sur+1;
-		$sql3="UPDATE charecter SET vote = $no WHERE id = 104";
+		$sql3="UPDATE charecter SET vote = $sur WHERE id = 104";
 		mysqli_query($con,$sql3);
 	}
 }
