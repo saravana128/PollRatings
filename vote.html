@@ -108,10 +108,12 @@
         var par = url.split('?')[1];
         var xmlhttp=new XMLHttpRequest();
   xmlhttp.onreadystatechange=function() {
-    if (this.readyState==4 && this.status==200) {
+    if (this.status==200) {
         var params = this.responseText.split(' ');
       document.getElementById("vijay").style="width:" +params[0].split(',')[0]+ "%";
       document.getElementById("vij").innerHTML=params[0].split(',')[0]+ "% -("+params[0].split(',')[1]+") votes";
+
+      document.getElementById("vijay").innerHTML=params[0].split(',')[0]+ "% -("+params[0].split(',')[1]+") votes";
     }
   }
   xmlhttp.open("GET","https://status200ok.net/Api/Ratings.php?"+par,true);
